@@ -23,7 +23,7 @@ nav.nav-hover {
   justify-content: space-between;
   
 }
-nav span{
+.nav-hover span{
 visibility: hidden;
 }
 .nav-hover a{      
@@ -31,7 +31,7 @@ visibility: hidden;
   display: inline;
   
 }
-nav p a i{
+.nav-hover i{
   font-size:3rem;
   color: #2d441f;  
   text-align: center;    
