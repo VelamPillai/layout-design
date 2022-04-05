@@ -1,0 +1,224 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200;1,300;1,800;1,900&display=swap");
+/* background image */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  /* background: linear-gradient(270deg, #f7bd9f, #f8c5ac, #f0b392, #e1d0c7); */
+  background: linear-gradient(270deg,rgb(235, 225, 225),rgba(235, 225, 225, 0.649));
+}
+/* general style -(default for mobile) */
+/* navigation */
+.nav-hover i:hover {
+  font-size: 2.5rem;
+  color: #2e680b;
+  filter: brightness(30%);
+}
+/* header */
+header {
+  color:black;
+  text-align: center;
+}
+/* heading */
+header h1 {
+  font-style: italic;
+  font-size: 5rem;
+  text-shadow: 2px 2px 2px #0d5403;
+  padding: 5%;
+}
+/* para */
+header p {color:black;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #27860f;
+  padding: 5%;
+}
+/* gray scale - image  and image shadow */
+img{
+  filter: drop-shadow(10px 10px 20px #860f13);
+  filter:grayscale(100%);
+}
+
+/* main */
+main p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f28755;
+  padding: 3%;
+}
+
+/* footer */
+
+.footer-div a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ee7138;
+  width: 250px;
+  margin: 0 auto;
+  padding: 0.5%;
+}
+
+.footer-div a::before,
+.footer-div a::after {
+  content: "\f72e";
+  color: #2d441f;
+  font: var(--fa-font-solid);
+  padding: 1%;
+}
+.footer-div a:hover {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #2d441f;
+  transition: 1s;
+}
+ 
+/* overall container */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* navigation */
+  nav.nav-hover {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-between;
+  }
+  nav span {
+    visibility: hidden;
+  }
+  .nav-hover a {
+    text-decoration: none;
+    display: inline;
+  }
+  nav p a i {
+    font-size: 3rem;
+    color: #2d441f;
+    text-align: center;
+  }
+  /* header image */
+  header img {
+    width: 100%;
+    padding: 0px;
+  }
+
+  /* main */
+
+  main p {
+    text-align: center;
+  }
+
+  /* tablet - view */
+
+@media only screen and (min-width: 600px) and (max-width:1199px) {
+  .container {   
+    flex-direction: row;
+  }
+  
+  /* navigation */
+  nav.nav-hover {
+    flex-direction: column;    
+    padding-left: 5em;
+  }
+  .nav-border {
+    background: r;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(270deg,#cdc69044 ,rgb(232, 178, 76),rgb(200, 211, 117));
+    width: 150px;
+    height: 40%;
+    margin: 0;
+    padding: 5px;
+  }
+  .nav-hover i {
+    font-size: 4rem;      
+    transform: rotate(360deg);
+    margin-top: 50px;
+    transition: 0.5s;
+  } 
+  
+/* header */
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* header imge*/
+  header img {
+    width: 90%;
+    margin-right: 10px;
+    border-radius: 20px;  
+  }
+  /* main */
+  main p {
+    padding-top: 2em;
+    margin: 0 auto;
+  }
+}
+
+/* desktop - view */
+@media  screen and (min-width: 1200px) {
+  .container {    
+    margin-top: 10px;
+    height: 50vh;
+    flex-direction: row;   
+  }
+  /* navigation */
+  nav.nav-hover  {
+    flex-direction: column;
+    padding: 10em;
+    
+  }  
+  .nav-hover  i {
+    display: none;
+  }
+  .nav-hover a {    
+    display: flex;
+    justify-content: space-around;   
+    padding: 20%;    
+    /* background-color: #d7530c44; */
+    width: 100px;
+    height: 20vh;
+    border-radius: 10px;
+  }
+  .nav-hover span {    
+    visibility: visible;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #317208;
+    transform: rotate(270deg);
+    padding: 40%;
+    transition: 0.5s;
+  }
+  nav span:hover {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2c6a06;
+    transition: 1s;
+    margin-bottom: 10%;
+    padding: 40%;
+  }
+  /* header */
+  header {    
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+  }
+  header img {
+    width: 50%;
+    margin-right: 5px;
+    border-radius: 20px;   
+    padding: 0px;
+  }
+  /* main */
+  main p {
+    margin: 0 auto;
+  }
+}
